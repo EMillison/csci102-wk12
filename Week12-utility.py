@@ -78,3 +78,11 @@ def Intersection(list1, list2):
                 intersection_list.append(list1[i])
     return intersection_list
     
+#NotIn
+#Takes in two lists and returns a single list that is all values in the first list that are NOT in the second
+def NotIn(list1, list2):
+    not_in_list = []
+    for i in range(len(list1)):
+        if list1[i] not in list2:
+            not_in_list.append(list1[i])
+    return not_in_list
