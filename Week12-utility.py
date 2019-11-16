@@ -28,4 +28,14 @@ def UpdateString(string1, string2, index):
     for i in range(len(string1_list)):
         string3 += string1_list[i]
     return string3
+
+#FindWordCount:
+def FindWordCount(list1, string1):
+    counter = 0
+    for word in list1:
+        if word == string1:
+            counter += 1
+        else:
+            pass
+    return counter
     
