@@ -67,4 +67,14 @@ def Union(list1, list2):
         if list2[j] not in union_list:
             union_list.append(list2[j])
     return union_list
+
+#Intersection:
+#Takes in two lists and returns a single list that is the intersection of the two lists (return all values that are in both lists)
+def Intersection(list1, list2):
+    intersection_list = []
+    for i in range(len(list1)):
+        for j in range(len(list2)):
+            if list1[i] == list2[j]:
+                intersection_list.append(list1[i])
+    return intersection_list
     
